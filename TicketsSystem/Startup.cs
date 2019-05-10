@@ -26,14 +26,16 @@ namespace TicketsSystem
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddDbContext<ApplicationDbContext>(options =>
+            services.AddDbContext<Data.ApplicationDbContext>(options =>
                 options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
 
             services.AddIdentity<ApplicationUser, IdentityRole>()
-                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddEntityFrameworkStores<Data.ApplicationDbContext>()
                 .AddDefaultTokenProviders();
 
             // Add application services.
+            services.AddTransient<IBookRepository, FakeBookRepository>();
+            services.AddTransient<ISheduleRepository, FakeSheduleRepository>();
             services.AddTransient<IEmailSender, EmailSender>();
 
             services.AddMvc();

@@ -10,6 +10,12 @@ namespace TicketsSystem.Controllers
 {
     public class HomeController : Controller
     {
+       private ISheduleRepository repository;
+       public HomeController(ISheduleRepository repo)
+        {
+            repository = repo;
+        }
+        public ViewResult List() => View(repository.Shedules);
         public IActionResult Index()
         {
             return View();
