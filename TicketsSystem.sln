@@ -1,9 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.28010.2041
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28803.202
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketsSystem", "TicketsSystem\TicketsSystem.csproj", "{65BED79D-59E1-425E-B136-E0D95DA0468D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TicketsSystem", "TicketsSystem\TicketsSystem.csproj", "{65BED79D-59E1-425E-B136-E0D95DA0468D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketsSystem.Data", "TicketsSystem.Data\TicketsSystem.Data.csproj", "{57B47489-9A48-43C9-B72C-3A9FB0E2C906}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TicketsSystem.Business", "TicketsSystem.Business\TicketsSystem.Business.csproj", "{8BE34372-8451-4F71-BD8B-BD5775BBBDAB}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{65BED79D-59E1-425E-B136-E0D95DA0468D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{65BED79D-59E1-425E-B136-E0D95DA0468D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{65BED79D-59E1-425E-B136-E0D95DA0468D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57B47489-9A48-43C9-B72C-3A9FB0E2C906}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57B47489-9A48-43C9-B72C-3A9FB0E2C906}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57B47489-9A48-43C9-B72C-3A9FB0E2C906}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57B47489-9A48-43C9-B72C-3A9FB0E2C906}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8BE34372-8451-4F71-BD8B-BD5775BBBDAB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8BE34372-8451-4F71-BD8B-BD5775BBBDAB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8BE34372-8451-4F71-BD8B-BD5775BBBDAB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8BE34372-8451-4F71-BD8B-BD5775BBBDAB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

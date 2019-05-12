@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace TicketsSystem.Models
 {
-    interface IBookRepository
+    public interface IBookRepository
     {
         IQueryable<Book> Books { get; }
     }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace TicketsSystem.Models
+namespace TicketsSystem.Data.Entities
 {
     public class Book
     {
